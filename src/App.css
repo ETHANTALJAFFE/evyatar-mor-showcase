@@ -11,9 +11,9 @@
 }
 
 .showcases-container {
-  width: 95%;
   top: 5%;
   left: 50%;
+  width: 1200px;
   position: absolute;
   transform: translateX(-50%);
 }

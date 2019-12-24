@@ -1,14 +1,21 @@
 import React from 'react';
-import {StyledShowCaseHeaderTitle, StyledShowCaseHeaderContainer, StyledShowcase, StyledShowcaseBackground} from "./style";
+import {
+    StyledShowCaseHeaderTitle,
+    StyledShowCaseHeaderContainer,
+    StyledShowcase,StyledShowcaseImg,
+    StyledShowcaseBackground,
+    StyledShowcaseIcon
+} from "./style";
 
-const ShowCaseHeader = ({title, fontColor, backgroundColor, description}) => {
+const ShowCaseHeader = ({title, fontColor, backgroundColor, description, imgSrc, iconSrc}) => {
     return <StyledShowcase fontColor={fontColor}>
         <StyledShowcaseBackground backgroundColor={backgroundColor}>
-            <div>Icon</div>
             <StyledShowCaseHeaderContainer>
+                <StyledShowcaseIcon src={iconSrc} />
                 <StyledShowCaseHeaderTitle>{title}</StyledShowCaseHeaderTitle>
                 <div>{description}</div>
             </StyledShowCaseHeaderContainer>
+            <StyledShowcaseImg src={imgSrc}/>
         </StyledShowcaseBackground>
     </StyledShowcase>;
 };
