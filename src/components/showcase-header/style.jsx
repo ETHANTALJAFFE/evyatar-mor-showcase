@@ -34,11 +34,11 @@ const StyledShowCaseHeaderContainer = styled.div`
 const StyledShowcaseImg = styled.div`
   width: 840px;
   height: 500px;
-  top: -9%;
+  top: -6%;
   left: 36%;
   position: absolute;
   z-index: 1000;
-  clip-path: inset(16% 0% 0% 0%);
+  clip-path: inset(18% 0% 0% 0%);
   background-repeat: no-repeat;
   background-image: ${props => 'url(' + props.src + ')'};
 `;
