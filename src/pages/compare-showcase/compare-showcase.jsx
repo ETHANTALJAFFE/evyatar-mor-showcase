@@ -1,8 +1,24 @@
-import React from 'react';
-import ShowCaseHeader from "../../components/showcase-header/showcase-header";
+import React, {useMemo} from 'react';
+// import ShowCaseHeader from "../../components/showcase-header/showcase-header";
+import {StyledSectionContainer, StyledSectionContentContainer} from "../text-to-path-showcase/style";
+import ShowcaseSection from "../../components/showcase-section/showcase-section";
+import {CompareShowcaseConfig} from "./compare-showcase.config";
 
 const CompareShowcase = () => {
-    return <div><ShowCaseHeader title={'Compare'}  description={'Compare is a stupid project evyatar made'}/></div>;
+    const headerConfig = useMemo(() => CompareShowcaseConfig.header, []);
+    const sections = useMemo(() => CompareShowcaseConfig.sections, []);
+
+    return (
+        <StyledSectionContainer>
+            {/*<ShowCaseHeader iconSrc={headerConfig.iconSrc} imgSrc={headerConfig.imgSrc}
+                            fontColor={headerConfig.fontColor} title={headerConfig.title}
+                            backgroundColor={headerConfig.backgroundColor}
+                            description={headerConfig.description}/>*/}
+            <StyledSectionContentContainer>
+                {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
+            </StyledSectionContentContainer>
+        </StyledSectionContainer>);
 };
+
 
 export default CompareShowcase;

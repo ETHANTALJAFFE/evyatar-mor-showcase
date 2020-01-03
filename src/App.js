@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import CompareShowcase from "./pages/compare-showcase/compare-showcase";
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import TextToPathShowcase from "./pages/text-to-path-showcase/text-to-path-showcase";
 
 function App() {

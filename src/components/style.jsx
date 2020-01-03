@@ -7,8 +7,15 @@ const StyledContentOutline = styled.div`
   border: 1px solid #dedede;
 `;
 
+
+const StyledContentOutlineTitle = styled.div`
+  font-size: 21px;
+  font-weight: bold;
+  padding-bottom: 15px;
+`;
+
 const StyledTextBlock = styled.div`
 padding: 0 0 30px 0;
 `;
 
-export {StyledContentOutline, StyledTextBlock};
+export {StyledContentOutline, StyledContentOutlineTitle, StyledTextBlock};
