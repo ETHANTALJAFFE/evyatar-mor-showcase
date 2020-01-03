@@ -8,7 +8,6 @@ function App() {
         <div className="App">
             <div className="showcases-container">
                 <TextToPathShowcase/>
-                <CompareShowcase/>
             </div>
         </div>
     );

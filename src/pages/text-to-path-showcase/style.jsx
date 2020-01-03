@@ -9,6 +9,7 @@ const StyledSectionContainer = styled.div`
 `;
 
 const StyledSectionContentContainer = styled.div`
+  width: 90%;
   max-width: 745px;
 `;
 

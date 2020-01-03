@@ -2,6 +2,7 @@ import React from "react";
 import {StyledTextBlock} from "../../components/style";
 import * as TextToPathIcon from '../../resources/text-to-path-icon.png';
 import * as TextToPath from "../../resources/text-to-path-mockup.png";
+import * as TextToPathMockupGif from "../../resources/Lightricks-text-to-path-mockup-new.gif";
 import ShowcaseSectionTable from "../../components/showcase-section-table/showcase-section-table";
 import {StyledFigmaIframe} from "../../components/showcase-section/style";
 
@@ -59,6 +60,19 @@ const TextOnPathConfig = {
                     src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FAIHL8DLJcUmF4o2BelnKhs%2FText-Path-Dots%3Fnode-id%3D0%253A1'}/>
                 <ShowcaseSectionTable
                     table={[['Pros', 'Cons'], ['Intuitive.', 'Finger may hide the text while editing.'], ['Customizable.', ''], ['Real time text preview.', '']]}/>
+            </div>
+        },
+        {
+            title: 'Final Thoughts',
+            subtitle: 'After researching the subject and designing the wireframes, ' +
+                'I realized that combining the last two concepts would provide the best' +
+                ' of both worlds: Preset options and full customization through circle shaped anchors.',
+            content: <div>
+                <StyledFigmaIframe
+                    src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5fM15FwJyTPrBOb2z0RKzL%2FText-Path-Dots-and-Preset%3Fnode-id%3D0%253A1'}/>
+                <ShowcaseSectionTable
+                    table={[['Pros', 'Cons'], ['Easy to use.', 'Finger may hide the text while editing.'], ['Customizable.', ''], ['Intuitive.', ''], ['A desired result can be achieved in one click', ''], ['Real time text preview.', '']]}/>
+                <div style={{display: 'flex', justifyContent: 'center', padding: '15px 0'}}><img width="100%" src={TextToPathMockupGif}/></div>
             </div>
         }
     ]
