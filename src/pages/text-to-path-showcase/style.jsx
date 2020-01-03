@@ -9,7 +9,7 @@ const StyledSectionContainer = styled.div`
 `;
 
 const StyledSectionContentContainer = styled.div`
-  max-width: 680px;
+  max-width: 745px;
 `;
 
 export {StyledSectionContainer, StyledSectionContentContainer};

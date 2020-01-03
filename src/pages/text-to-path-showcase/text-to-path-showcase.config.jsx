@@ -2,6 +2,8 @@ import React from "react";
 import {StyledTextBlock} from "../../components/style";
 import * as TextToPathIcon from '../../resources/text-to-path-icon.png';
 import * as TextToPath from "../../resources/text-to-path-mockup.png";
+import ShowcaseSectionTable from "../../components/showcase-section-table/showcase-section-table";
+import {StyledFigmaIframe} from "../../components/showcase-section/style";
 
 const BackgroundSectionSubtitle = <div>
     <StyledTextBlock>Text on Path is a popular and useful functionality in photo editing software. It lets you control
@@ -31,9 +33,10 @@ const TextOnPathConfig = {
         {
             title: 'Concept 1: Drawing the path',
             subtitle: 'Drawing the path using your finger while swiping it on the screen.',
-            content: <iframe style={{border: 'none'}} width="800" height="450"
-                             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLq9hebNNaFTtkJ44FLlNPI%2FText-Path-Draw%3Fnode-id%3D0%253A1"
-                             allowFullScreen></iframe>
+            content: <div>
+                <StyledFigmaIframe src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLq9hebNNaFTtkJ44FLlNPI%2FText-Path-Draw%3Fnode-id%3D0%253A1'} />
+                <ShowcaseSectionTable table={[['Pros', 'Cons'], ['Easy to use.', 'Difficult to control, hard to create a precise result.']]} />
+            </div>
         }]
 };
 

@@ -14,12 +14,14 @@ const ShowcaseSectionTable = ({table}) => {
         <StyledShowcaseTable>
             {table.map((row, index) => {
                 return index === 0 ?
-                    <StyledHeaderRow>{row.map((headerText, columIndex) => {
-                        return (<StyledHeaderField
-                            hasBorder={columIndex % 2 === 0}><StyledHeaderTitle>{headerText}</StyledHeaderTitle></StyledHeaderField>);
-                    })}</StyledHeaderRow>
-                    : <StyledRegularRow>{row.map((field, fieldIndex) => {
-                        return (<StyledRowField  hasBorder={fieldIndex % 2 === 0}><StyledRowFieldText>{field}</StyledRowFieldText></StyledRowField>)
+                    <StyledHeaderRow key={index}>
+                        {row.map((headerText, columIndex) => {
+                            return (<StyledHeaderField key={columIndex}
+                                hasBorder={columIndex % 2 === 0}><StyledHeaderTitle>{headerText}</StyledHeaderTitle></StyledHeaderField>);
+                        })}</StyledHeaderRow>
+                    : <StyledRegularRow key={index}>{row.map((field, fieldIndex) => {
+                        return (<StyledRowField key={fieldIndex}
+                            hasBorder={fieldIndex % 2 === 0}><StyledRowFieldText>{field}</StyledRowFieldText></StyledRowField>)
                     })}</StyledRegularRow>
             })}
         </StyledShowcaseTable>

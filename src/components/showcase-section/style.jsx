@@ -11,11 +11,22 @@ const StyledShowCaseSection = styled.div`
 const StyledSectionSubTitle = styled.div`
     color: #000000;
     font-size: 16px;
-    padding: 5% 0 0 0;
+    padding: 5px 0 35px 0;
     line-height: 26px;
     font-weight: normal;
 `;
+
+const StyledIframe = styled.iframe`
+  width: 100%;
+  border: none;
+  height: 640px;
+  padding: 0 0 25px 0;
+`;
+
+const StyledFigmaIframe = ({src}) => <StyledIframe src={src} allowFullScreen />;
+
 export {
+    StyledFigmaIframe,
     StyledSectionTitle,
     StyledSectionSubTitle,
     StyledShowCaseSection

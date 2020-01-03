@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledShowcaseTable = styled.div`
   display: flex;
+  font-size: 14px;
   flex-direction: column;
 `;
 
