@@ -27,8 +27,8 @@ const StyledHeaderField = styled.div`
 
 const StyledRegularRow = styled.div`
   display: flex;
+  align-items: stretch;
   background-color: #fff;
-  align-items: flex-start;
   border: 1px solid #c1c7cd;
   border-top: 0;
   justify-content: space-around;
