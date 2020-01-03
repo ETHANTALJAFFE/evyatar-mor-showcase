@@ -2,9 +2,10 @@ import React from "react";
 import {StyledTextBlock} from "../../components/style";
 import * as TextToPathIcon from '../../resources/text-to-path-icon.png';
 import * as TextToPath from "../../resources/text-to-path-mockup.png";
+import {StyledFigmaIframe} from "../../components/showcase-section/style";
+import * as TextToPathExample from "../../resources/Text-to-path-example.gif";
 import * as TextToPathMockupGif from "../../resources/Lightricks-text-to-path-mockup-new.gif";
 import ShowcaseSectionTable from "../../components/showcase-section-table/showcase-section-table";
-import {StyledFigmaIframe} from "../../components/showcase-section/style";
 
 const BackgroundSectionSubtitle = <div>
     <StyledTextBlock>Text on Path is a popular and useful functionality in photo editing software. It lets you control
@@ -30,7 +31,9 @@ const TextOnPathConfig = {
         {
             title: 'Background',
             subtitle: BackgroundSectionSubtitle,
-            content: null
+            content: <div>
+                <div style={{display: 'flex', justifyContent: 'center', padding: '15px 0', width: '100%', background: '#f9f4f3'}}><img src={TextToPathExample}/></div>
+            </div>
         },
         {
             title: 'Concept 1: Drawing the path',
