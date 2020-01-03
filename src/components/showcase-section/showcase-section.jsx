@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyledSectionTitle, StyledShowCaseSection, StyledSectionSubTitle} from "./style";
-import {StyledContentOutline} from "../style";
 
 const ShowcaseSection = ({title, subtitle, content}) => {
     return (
@@ -11,9 +10,7 @@ const ShowcaseSection = ({title, subtitle, content}) => {
             <StyledSectionSubTitle>
                 {subtitle}
             </StyledSectionSubTitle>
-            <StyledContentOutline>
-                {content}
-            </StyledContentOutline>
+            {content}
         </StyledShowCaseSection>
     )
 };

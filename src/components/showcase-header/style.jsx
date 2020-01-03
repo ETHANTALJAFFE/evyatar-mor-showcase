@@ -34,7 +34,7 @@ const StyledShowCaseHeaderContainer = styled.div`
 const StyledShowcaseImg = styled.div`
   width: 840px;
   height: 500px;
-  top: -6%;
+  top: -90px;
   left: 36%;
   position: absolute;
   z-index: 1000;
