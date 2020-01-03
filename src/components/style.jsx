@@ -3,8 +3,12 @@ import styled from 'styled-components';
 
 const StyledContentOutline = styled.div`
   padding: 7% 5%;
-  border-radius: 10px;
-  border: 1px solid lightgray;
+  border-radius: 7px;
+  border: 1px solid #dedede;
 `;
 
-export {StyledContentOutline};
+const StyledTextBlock = styled.div`
+padding: 0 0 30px 0;
+`;
+
+export {StyledContentOutline, StyledTextBlock};
