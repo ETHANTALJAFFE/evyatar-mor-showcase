@@ -11,7 +11,6 @@ const StyledHeaderRow = styled.div`
   display: flex;
   align-items: flex-start;
   border: 1px solid #c1c7cd;
-  border-bottom: 0;
   background-color: #f0f1f3;
   justify-content: space-around;
 `;
@@ -31,6 +30,7 @@ const StyledRegularRow = styled.div`
   background-color: #fff;
   align-items: flex-start;
   border: 1px solid #c1c7cd;
+  border-top: 0;
   justify-content: space-around;
 `;
 

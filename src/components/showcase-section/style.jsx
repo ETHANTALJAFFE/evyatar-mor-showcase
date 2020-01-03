@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSectionTitle = styled.span`
-  font-size: 40px;
+  font-size: 26px;
+  line-height: 28px;
 `;
+
 const StyledShowCaseSection = styled.div`
   padding: 10% 0 0 0;
   text-align: left;
 `;
+
 const StyledSectionSubTitle = styled.div`
     color: #000000;
     font-size: 16px;

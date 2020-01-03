@@ -25,19 +25,43 @@ const TextOnPathConfig = {
         backgroundColor: '#1f1d24',
         description: 'User experience exploration and concept example for the photo editing app Enlight'
     },
-    sections: [{
-        title: 'Background',
-        subtitle: BackgroundSectionSubtitle,
-        content: null
-    },
+    sections: [
+        {
+            title: 'Background',
+            subtitle: BackgroundSectionSubtitle,
+            content: null
+        },
         {
             title: 'Concept 1: Drawing the path',
             subtitle: 'Drawing the path using your finger while swiping it on the screen.',
             content: <div>
-                <StyledFigmaIframe src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLq9hebNNaFTtkJ44FLlNPI%2FText-Path-Draw%3Fnode-id%3D0%253A1'} />
-                <ShowcaseSectionTable table={[['Pros', 'Cons'], ['Easy to use.', 'Difficult to control, hard to create a precise result.']]} />
+                <StyledFigmaIframe
+                    src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLq9hebNNaFTtkJ44FLlNPI%2FText-Path-Draw%3Fnode-id%3D0%253A1'}/>
+                <ShowcaseSectionTable
+                    table={[['Pros', 'Cons'], ['Easy to use.', 'Difficult to control, hard to create a precise result.']]}/>
             </div>
-        }]
+        },
+        {
+            title: 'Concept 2: Text Path Presets',
+            subtitle: 'Choose a path preset to create the path you wish. Click the back button to finish editing.',
+            content: <div>
+                <StyledFigmaIframe
+                    src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FspvCKfrrlNdDpZxppsVMHE%2FText-Path-Presets%3Fnode-id%3D0%253A2'}/>
+                <ShowcaseSectionTable
+                    table={[['Pros', 'Cons'], ['Easy to use.', 'Limited. Not customizable.'], ['Limited. Not customizable.', ''], ['Fast. A desired result can be achieved in one click.', '']]}/>
+            </div>
+        },
+        {
+            title: 'Concept 3: Dragging the text path',
+            subtitle: 'Use circle shaped anchors to adjust the text path. There will be a slider giving the user a range between 3 to 7 control points. Dragging each anchor will adjust the look of the text. Use the undo/redo buttons in case of mistakes.',
+            content: <div>
+                <StyledFigmaIframe
+                    src={'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FAIHL8DLJcUmF4o2BelnKhs%2FText-Path-Dots%3Fnode-id%3D0%253A1'}/>
+                <ShowcaseSectionTable
+                    table={[['Pros', 'Cons'], ['Intuitive.', 'Finger may hide the text while editing.'], ['Customizable.', ''], ['Real time text preview.', '']]}/>
+            </div>
+        }
+    ]
 };
 
 export {TextOnPathConfig};
