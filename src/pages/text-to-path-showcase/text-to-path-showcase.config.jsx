@@ -32,7 +32,7 @@ const TextOnPathConfig = {
             title: 'Background',
             subtitle: BackgroundSectionSubtitle,
             content: <div>
-                <div style={{display: 'flex', justifyContent: 'center', padding: '15px 0', width: '100%', background: '#f9f4f3'}}><img src={TextToPathExample}/></div>
+                <div style={{display: 'flex', justifyContent: 'center', padding: '15px 0', width: '100%', background: '#f2f2f2', }}><img style={{mixBlendMode: 'darken'}} src={TextToPathExample}/></div>
             </div>
         },
         {
