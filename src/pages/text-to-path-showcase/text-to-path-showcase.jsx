@@ -15,9 +15,7 @@ const TextToPathShowcase = () => {
                             fontColor={headerConfig.fontColor} title={headerConfig.title}
                             backgroundColor={headerConfig.backgroundColor}
                             description={headerConfig.description}/>
-            <StyledSectionContentContainer>
-                {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
-            </StyledSectionContentContainer>
+            {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
         </StyledSectionContainer>);
 };
 

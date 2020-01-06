@@ -7,8 +7,9 @@ const StyledSectionTitle = styled.span`
 `;
 
 const StyledShowCaseSection = styled.div`
-  padding: 10% 0 0 0;
+  width: 100%;
   text-align: left;
+  padding: 10% 0 0 0;
 `;
 
 const StyledSectionSubTitle = styled.div`
@@ -20,7 +21,8 @@ const StyledSectionSubTitle = styled.div`
 `;
 
 const StyledIframe = styled.iframe`
-  width: 100%;
+  width: 90%;
+  max-width: 745px;
   border: none;
   height: 640px;
   padding: 0 0 25px 0;

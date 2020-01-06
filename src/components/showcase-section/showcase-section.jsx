@@ -1,16 +1,22 @@
 import React from 'react';
 import {StyledSectionTitle, StyledShowCaseSection, StyledSectionSubTitle} from "./style";
+import {StyledSectionContentContainer} from "../../pages/text-to-path-showcase/style";
 
-const ShowcaseSection = ({title, subtitle, content}) => {
+const ShowcaseSection = ({title, subtitle, content, image}) => {
     return (
         <StyledShowCaseSection>
-        <StyledSectionTitle>
-            {title}
-        </StyledSectionTitle>
-            <StyledSectionSubTitle>
-                {subtitle}
-            </StyledSectionSubTitle>
-            {content}
+            <StyledSectionContentContainer>
+                <div>
+                <StyledSectionTitle>
+                    {title}
+                </StyledSectionTitle>
+                <StyledSectionSubTitle>
+                    {subtitle}
+                </StyledSectionSubTitle>
+                {content}
+                </div>
+            </StyledSectionContentContainer>
+            {image}
         </StyledShowCaseSection>
     )
 };

@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledContentOutline = styled.div`
-  padding: 7% 5%;
+  padding: 5% 7%;
+  background: #fff;
   border-radius: 7px;
-  border: 1px solid #dedede;
+  box-shadow: 0px 15px 44px rgba(0, 0, 0, 0.07);
 `;
 
 
@@ -18,4 +19,11 @@ const StyledTextBlock = styled.div`
 padding: 0 0 30px 0;
 `;
 
-export {StyledContentOutline, StyledContentOutlineTitle, StyledTextBlock};
+const StyledImageContainer = styled.div`
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  justify-content: center;
+  background: ${props => props.customBackground || '#fff'};
+`
+export {StyledContentOutline, StyledImageContainer, StyledContentOutlineTitle, StyledTextBlock};
