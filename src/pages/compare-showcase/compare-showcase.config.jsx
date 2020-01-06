@@ -1,7 +1,13 @@
-import * as TextToPathExample from "../../resources/Text-to-path-example.gif";
+import * as Flow from "../../resources/Compare/Flow.png";
 import React from "react";
 import {StyledSectionContentContainer} from "../text-to-path-showcase/style";
-import {StyledContentOutline, StyledContentOutlineTitle, StyledTextBlock} from "../../components/style";
+import {
+    StyledContentOutline,
+    StyledContentOutlineTitle,
+    StyledImageContainer,
+    StyledTextBlock
+} from "../../components/style";
+import * as TextToPathMockupGif from "../../resources/Lightricks-text-to-path-mockup-new.gif";
 
 const analysisAndFlowSubtitle = 'In order to understand the product, its users and the right solution, you must first understand the app’s objective(s).';
 
@@ -26,7 +32,9 @@ const CompareShowcaseConfig = {
                     <div>- Browsing categories in the site</div>
                     <div>- Referral from a search engine, site or a friend</div>
             </StyledTextBlock>
-        </StyledContentOutline>
+        </StyledContentOutline>,
+        image: <StyledImageContainer><img width="745px"
+                                          src={Flow}/></StyledImageContainer>
     }]
 };
 

@@ -12,7 +12,6 @@ const StyledSectionContainer = styled.div`
 const StyledSectionContentContainer = styled.div`
   display: flex;
   justify-content: center;
-  transform: translateX(50%);
   width: 90%;
   max-width: 745px;
 `;

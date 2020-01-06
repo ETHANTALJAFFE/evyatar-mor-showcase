@@ -8,6 +8,10 @@ const StyledSectionTitle = styled.span`
 
 const StyledShowCaseSection = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
   padding: 10% 0 0 0;
 `;
