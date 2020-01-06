@@ -4,6 +4,7 @@ import ShowCaseHeader from "../../components/showcase-header/showcase-header";
 import ShowcaseSection from "../../components/showcase-section/showcase-section";
 
 import {StyledSectionContainer, StyledSectionContentContainer} from "./style";
+import Topbar from "../../topbar/topbar";
 
 const TextToPathShowcase = () => {
     const headerConfig = useMemo(() => TextOnPathConfig.header, []);
@@ -11,6 +12,7 @@ const TextToPathShowcase = () => {
 
     return (
         <StyledSectionContainer>
+            <Topbar customBackgroundColor={'#fff'} customColor={'#000'}/>
             <ShowCaseHeader iconSrc={headerConfig.iconSrc} imgSrc={headerConfig.imgSrc}
                             fontColor={headerConfig.fontColor} title={headerConfig.title}
                             backgroundColor={headerConfig.backgroundColor}
