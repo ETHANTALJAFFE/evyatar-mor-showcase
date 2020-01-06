@@ -33,7 +33,7 @@ const CompareShowcaseConfig = {
                     <div>- Referral from a search engine, site or a friend</div>
             </StyledTextBlock>
         </StyledContentOutline>,
-        image: <StyledImageContainer><img width="745px"
+        image: <StyledImageContainer customBackground={'#ecf2fa'}><img width="745px"
                                           src={Flow}/></StyledImageContainer>
     }]
 };
