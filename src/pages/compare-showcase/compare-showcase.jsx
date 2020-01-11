@@ -4,6 +4,9 @@ import {StyledSectionContainer, StyledSectionContentContainer} from "../text-to-
 import ShowcaseSection from "../../components/showcase-section/showcase-section";
 import {CompareShowcaseConfig} from "./compare-showcase.config";
 import Topbar from "../../topbar/topbar";
+import {StyledImageContainer, StyledResponsiveImage} from "../../components/style";
+import Mock1 from '../../resources/Compare/Mock1.png';
+import Mock2 from '../../resources/Compare/Mock2.png';
 
 const CompareShowcase = () => {
     const headerConfig = useMemo(() => CompareShowcaseConfig.header, []);
@@ -11,12 +14,14 @@ const CompareShowcase = () => {
 
     return (
         <StyledSectionContainer>
-            <Topbar customColor={'#fff'} customBackgroundColor={'#3d8aff'} />
+            <Topbar customColor={'#fff'} customBackgroundColor={'#3d8aff'}/>
             {/*<ShowCaseHeader iconSrc={headerConfig.iconSrc} imgSrc={headerConfig.imgSrc}
                             fontColor={headerConfig.fontColor} title={headerConfig.title}
                             backgroundColor={headerConfig.backgroundColor}
                             description={headerConfig.description}/>*/}
-                {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
+            {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
+            <StyledImageContainer customMargin={'30px 0 0 0'} customBackground={'#1380FF'}><StyledResponsiveImage customMaxWidth={'740px'} src={Mock1} /></StyledImageContainer>
+            <StyledImageContainer customPadding={'0'} customMargin={'0'} customBackground={'#b5f6ff'}><StyledResponsiveImage src={Mock2} /></StyledImageContainer>
         </StyledSectionContainer>);
 };
 

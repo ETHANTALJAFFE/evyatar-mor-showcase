@@ -21,10 +21,15 @@ padding: 0 0 30px 0;
 
 const StyledImageContainer = styled.div`
   width: 100%;
-  margin: 30px 0;
+  margin: ${props => props.customMargin || '30px 0'};
   display: flex;
-  padding: 15px 0;
+  padding: ${props => props.customPadding || '15px 0'};
   justify-content: center;
   background: ${props => props.customBackground || '#fff'};
-`
-export {StyledContentOutline, StyledImageContainer, StyledContentOutlineTitle, StyledTextBlock};
+`;
+
+const StyledResponsiveImage = styled.img`
+  width: 100%;
+  max-width: ${props => props.customMaxWidth || 'default'};
+`;
+export {StyledContentOutline, StyledResponsiveImage, StyledImageContainer, StyledContentOutlineTitle, StyledTextBlock};

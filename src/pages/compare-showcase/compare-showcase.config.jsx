@@ -10,7 +10,7 @@ import {StyledSectionContentContainer} from "../text-to-path-showcase/style";
 import {
     StyledContentOutline,
     StyledContentOutlineTitle,
-    StyledImageContainer,
+    StyledImageContainer, StyledResponsiveImage,
     StyledTextBlock
 } from "../../components/style";
 import * as TextToPathMockupGif from "../../resources/Lightricks-text-to-path-mockup-new.gif";
@@ -40,7 +40,7 @@ const CompareShowcaseConfig = {
                 <div>- Referral from a search engine, site or a friend</div>
             </StyledTextBlock>
         </StyledContentOutline>,
-        image: <StyledImageContainer customBackground={'#ecf2fa'}><img width="745px"
+        image: <StyledImageContainer customBackground={'#ecf2fa'}><StyledResponsiveImage customMaxWidth="745px"
                                                                        src={Flow}/></StyledImageContainer>
     },
         {
@@ -56,10 +56,10 @@ const CompareShowcaseConfig = {
                         table={[['Assumption', 'Reason'], ['Adding Image of the product. ', 'Helping recognize the right product.'],
                             ['Change location', 'People will want to see prices in other countries'], ['Showing Price and Shipping time', 'Variable that user want to know, that\'s why he use the website.'],
                             ['There is no need for sorting option.', 'People use the search option to find specific product']]}/>
-                    <img src={ExamplesSearchResult} width={'640px'}/>
+                    <StyledResponsiveImage src={ExamplesSearchResult} customMaxWidth={'640px'}/>
                 </StyledContentOutline>,
             image: <StyledImageContainer customBackground={'#ecf2fa'}>
-                <img src={SearchResultImage} width={'745px'}/>
+                <StyledResponsiveImage src={SearchResultImage} customMaxWidth={'745px'}/>
             </StyledImageContainer>
         },
         {
@@ -81,10 +81,10 @@ const CompareShowcaseConfig = {
                                 <div>- Builds credibility.</div>
                             </>],
                         ['Adding Image of the product.', 'Helps recognizing the right product.']]}/>
-                <img src={ExamplesItemPage} width={'640px'}/>
+                <StyledResponsiveImage src={ExamplesItemPage} customMaxWidth={'640px'}/>
             </StyledContentOutline>,
             image: <StyledImageContainer customBackground={'#ecf2fa'}>
-                <img src={ItemPage} width={'745px'}/>
+                <StyledResponsiveImage src={ItemPage} customMaxWidth={'745px'}/>
             </StyledImageContainer>
         },
         {
@@ -95,7 +95,7 @@ const CompareShowcaseConfig = {
                     the processing of the information. To do this, I used a clean white background with bold colors that
                     will highlight the important parts.</StyledTextBlock></>,
             content: <StyledContentOutline>
-                <img src={DesignLang} width={'640px'}/>
+                <StyledResponsiveImage src={DesignLang} customMaxWidth={'640px'}/>
             </StyledContentOutline>
         }
     ]
