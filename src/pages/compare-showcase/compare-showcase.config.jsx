@@ -40,7 +40,7 @@ const CompareShowcaseConfig = {
                 <div>- Referral from a search engine, site or a friend</div>
             </StyledTextBlock>
         </StyledContentOutline>,
-        image: <StyledImageContainer customBackground={'#ecf2fa'}><StyledResponsiveImage customMaxWidth="745px"
+        image: <StyledImageContainer customBackground={'#ecf2fa'}><StyledResponsiveImage customMaxWidth="784px"
                                                                        src={Flow}/></StyledImageContainer>
     },
         {
@@ -56,10 +56,10 @@ const CompareShowcaseConfig = {
                         table={[['Assumption', 'Reason'], ['Adding Image of the product. ', 'Helping recognize the right product.'],
                             ['Change location', 'People will want to see prices in other countries'], ['Showing Price and Shipping time', 'Variable that user want to know, that\'s why he use the website.'],
                             ['There is no need for sorting option.', 'People use the search option to find specific product']]}/>
-                    <StyledResponsiveImage src={ExamplesSearchResult} customMaxWidth={'640px'}/>
+                    <StyledResponsiveImage src={ExamplesSearchResult} customMaxWidth={'745px'}/>
                 </StyledContentOutline>,
             image: <StyledImageContainer customBackground={'#ecf2fa'}>
-                <StyledResponsiveImage src={SearchResultImage} customMaxWidth={'745px'}/>
+                <StyledResponsiveImage src={SearchResultImage} customMaxWidth={'784px'}/>
             </StyledImageContainer>
         },
         {
@@ -81,10 +81,10 @@ const CompareShowcaseConfig = {
                                 <div>- Builds credibility.</div>
                             </>],
                         ['Adding Image of the product.', 'Helps recognizing the right product.']]}/>
-                <StyledResponsiveImage src={ExamplesItemPage} customMaxWidth={'640px'}/>
+                <StyledResponsiveImage src={ExamplesItemPage} customMaxWidth={'743px'}/>
             </StyledContentOutline>,
             image: <StyledImageContainer customBackground={'#ecf2fa'}>
-                <StyledResponsiveImage src={ItemPage} customMaxWidth={'745px'}/>
+                <StyledResponsiveImage src={ItemPage} customMaxWidth={'784px'}/>
             </StyledImageContainer>
         },
         {
@@ -95,7 +95,7 @@ const CompareShowcaseConfig = {
                     the processing of the information. To do this, I used a clean white background with bold colors that
                     will highlight the important parts.</StyledTextBlock></>,
             content: <StyledContentOutline>
-                <StyledResponsiveImage src={DesignLang} customMaxWidth={'640px'}/>
+                <StyledResponsiveImage src={DesignLang} customMaxWidth={'614px'}/>
             </StyledContentOutline>
         }
     ]

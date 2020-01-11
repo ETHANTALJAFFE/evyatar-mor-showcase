@@ -6,7 +6,7 @@ import {CompareShowcaseConfig} from "./compare-showcase.config";
 import Topbar from "../../topbar/topbar";
 import {StyledImageContainer, StyledResponsiveImage} from "../../components/style";
 import Mock1 from '../../resources/Compare/Mock1.png';
-import Mock2 from '../../resources/Compare/Mock2.png';
+import Mock3 from '../../resources/Compare/Mock3.png';
 
 const CompareShowcase = () => {
     const headerConfig = useMemo(() => CompareShowcaseConfig.header, []);
@@ -24,7 +24,7 @@ const CompareShowcase = () => {
                 customMaxWidth={'740px'} src={Mock1}/></StyledImageContainer>
             <StyledImageContainer customPadding={'0'} customMargin={'0'}
                                   customBackground={'#b5f6ff'}><StyledResponsiveImage
-                src={Mock2}/></StyledImageContainer>
+                src={Mock3}/></StyledImageContainer>
         </StyledSectionContainer>);
 };
 
