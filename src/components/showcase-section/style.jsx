@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSectionTitle = styled.span`
-  font-size: 26px;
+  font-size: 31px;
   font-weight: bold;
   line-height: 28px;
 `;
@@ -20,7 +20,7 @@ const StyledShowCaseSection = styled.div`
 const StyledSectionSubTitle = styled.div`
     color: #000000;
     font-size: 16px;
-    padding: 5px 0 35px 0;
+    padding: 18px 0 35px 0;
     line-height: 26px;
     font-weight: normal;
 `;

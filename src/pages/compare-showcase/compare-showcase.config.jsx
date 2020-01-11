@@ -45,7 +45,7 @@ const CompareShowcaseConfig = {
     },
         {
             title: 'Research Example: Search results',
-            subtitle: 'This page displays the search results for the user.',
+            subtitle: <StyledTextBlock>This page displays the search results for the user.</StyledTextBlock>,
             content:
                 <StyledContentOutline>
                     <StyledContentOutlineTitle>What action are we trying to generate?</StyledContentOutlineTitle>

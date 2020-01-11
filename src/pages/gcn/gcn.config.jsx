@@ -45,10 +45,10 @@ const GcnConfig = {
                 <>
                     <StyledImageContainer customMargin={'30px 0 0 0'} customPadding={'200px 0'}
                                           customBackground={'#000'}>
-                        <StyledResponsiveImage customMaxWidth={'419px'} src={GCNLogo}/>
+                        <StyledResponsiveImage customMaxWidth={'319px'} src={GCNLogo}/>
                     </StyledImageContainer>
-                    <StyledImageContainer customMargin={'0'} customBackground={'#1d1d1d'}>
-                        <StyledResponsiveImage style={{mixBlendMode: 'screen'}} customMaxWidth={'960px'}
+                    <StyledImageContainer customMargin={'0'} customPadding={'190px 0'} customBackground={'#1d1d1d'}>
+                        <StyledResponsiveImage style={{mixBlendMode: 'screen'}} customMaxWidth={'300px'}
                                                src={GCNAnimation}/>
                     </StyledImageContainer>
                 </>

@@ -1,11 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Bookmark from '../resources/Simania.png';
+
 const StyledContentOutline = styled.div`
   padding: 5% 7%;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0px 15px 44px rgba(0, 0, 0, 0.07);
+  &:before {
+    content: '';
+    background: url(${Bookmark}) center no-repeat;
+    width: 17px;
+    height: 28px;
+    display: block;
+    position: relative;
+    top: -37px;
+    left: 610px;
+  }
 `;
 
 
