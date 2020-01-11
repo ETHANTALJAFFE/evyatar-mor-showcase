@@ -20,8 +20,11 @@ const CompareShowcase = () => {
                             backgroundColor={headerConfig.backgroundColor}
                             description={headerConfig.description}/>*/}
             {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
-            <StyledImageContainer customMargin={'30px 0 0 0'} customBackground={'#1380FF'}><StyledResponsiveImage customMaxWidth={'740px'} src={Mock1} /></StyledImageContainer>
-            <StyledImageContainer customPadding={'0'} customMargin={'0'} customBackground={'#b5f6ff'}><StyledResponsiveImage src={Mock2} /></StyledImageContainer>
+            <StyledImageContainer customMargin={'30px 0 0 0'} customBackground={'#1380FF'}><StyledResponsiveImage
+                customMaxWidth={'740px'} src={Mock1}/></StyledImageContainer>
+            <StyledImageContainer customPadding={'0'} customMargin={'0'}
+                                  customBackground={'#b5f6ff'}><StyledResponsiveImage
+                src={Mock2}/></StyledImageContainer>
         </StyledSectionContainer>);
 };
 

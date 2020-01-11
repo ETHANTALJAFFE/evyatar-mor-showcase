@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledSectionTitle = styled.span`
   font-size: 26px;
+  font-weight: bold;
   line-height: 28px;
 `;
 
