@@ -2,6 +2,7 @@ import React, {useMemo} from 'react';
 import {GcnConfig} from "./gcn.config";
 // import ShowCaseHeader from "../../components/showcase-header/showcase-header";
 import ShowcaseSection from "../../components/showcase-section/showcase-section";
+import OtherShowcases from '../../components/other-showcases/other-showcases';
 
 import {StyledSectionContainer, StyledSectionContentContainer} from "./style";
 import Topbar from "../../topbar/topbar";
@@ -18,6 +19,7 @@ const GcnShowcase = () => {
                             backgroundColor={headerConfig.backgroundColor}
                             description={headerConfig.description}/>*/}
             {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
+            <OtherShowcases/>
         </StyledSectionContainer>);
 };
 

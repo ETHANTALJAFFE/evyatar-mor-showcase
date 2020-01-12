@@ -5,6 +5,7 @@ import ShowcaseSection from "../../components/showcase-section/showcase-section"
 
 import {StyledSectionContainer, StyledSectionContentContainer} from "./style";
 import Topbar from "../../topbar/topbar";
+import OtherShowcases from "../../components/other-showcases/other-showcases";
 
 const TextToPathShowcase = () => {
     const headerConfig = useMemo(() => TextOnPathConfig.header, []);
@@ -18,6 +19,7 @@ const TextToPathShowcase = () => {
                             backgroundColor={headerConfig.backgroundColor}
                             description={headerConfig.description}/>
             {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
+            <OtherShowcases />
         </StyledSectionContainer>);
 };
 

@@ -7,7 +7,7 @@ import Topbar from "../../topbar/topbar";
 import {StyledImageContainer, StyledResponsiveImage} from "../../components/style";
 import Mock1 from '../../resources/Compare/Mock1.png';
 import Mock3 from '../../resources/Compare/Mock3.png';
-
+import OtherShowcases from '../../components/other-showcases/other-showcases';
 const CompareShowcase = () => {
     const headerConfig = useMemo(() => CompareShowcaseConfig.header, []);
     const sections = useMemo(() => CompareShowcaseConfig.sections, []);
@@ -25,6 +25,7 @@ const CompareShowcase = () => {
             <StyledImageContainer customPadding={'0'} customMargin={'0'}
                                   customBackground={'#b5f6ff'}><StyledResponsiveImage
                 src={Mock3}/></StyledImageContainer>
+            <OtherShowcases />
         </StyledSectionContainer>);
 };
 
