@@ -44,4 +44,25 @@ const StyledResponsiveImage = styled.img`
   width: 100%;
   max-width: ${props => props.customMaxWidth || 'default'};
 `;
-export {StyledContentOutline, StyledResponsiveImage, StyledImageContainer, StyledContentOutlineTitle, StyledTextBlock};
+const StyledShowcasesContainer = styled.div`
+    @media only screen and (max-width: 768px) {
+      margin-top: ${props => props.customMarginTopForMobile};
+      &:before {
+        top: ${props => props.customTopSkewPositionForMobile};
+        height: 150px !important;
+      }
+    }
+    &:before {
+    display: block;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: '';
+    backface-visibility: hidden;
+    height: 250px;
+    top: 400px;
+    background: #f6f7f9;
+    transform: skewY(-5deg);
+    }
+`;
+export {StyledShowcasesContainer, StyledContentOutline, StyledResponsiveImage, StyledImageContainer, StyledContentOutlineTitle, StyledTextBlock};

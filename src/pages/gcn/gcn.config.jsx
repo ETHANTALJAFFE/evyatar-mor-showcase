@@ -1,16 +1,20 @@
 import React from "react";
+
 import {
     StyledContentOutline,
     StyledContentOutlineTitle,
-    StyledImageContainer, StyledResponsiveImage,
+    StyledImageContainer,
+    StyledResponsiveImage,
     StyledTextBlock
 } from "../../components/style";
-import Inspiration from "../../resources/GCN/inspiration.png";
+
 import GCNLogo from "../../resources/GCN/GCN-logo.png";
-import GCNAnimation from "../../resources/GCN/GCN-animation.gif";
 import Wireframe from "../../resources/GCN/Wireframe.png";
-import DesignLangGCN from "../../resources/GCN/Design-lang-gcn.png";
+import Inspiration from "../../resources/GCN/inspiration.png";
 import DesktopMock from "../../resources/GCN/Desktop-mock.png";
+import MacbookMock from "../../resources/GCN/Macbook-mock.png";
+import GCNAnimation from "../../resources/GCN/GCN-animation.gif";
+import DesignLangGCN from "../../resources/GCN/Design-lang-gcn.png";
 import FlyingIphoneMock from "../../resources/GCN/Flying iPhone X Mockups.png";
 import ShowcaseSectionTable from "../../components/showcase-section-table/showcase-section-table";
 import {StyledShowcaseTable} from "../../components/showcase-section-table/style";
@@ -22,12 +26,15 @@ const BackgroundSectionSubtitle = <div>
 
 const GcnConfig = {
     header: {
-        iconSrc: undefined,
-        imgSrc: undefined,
+        imgSrc: MacbookMock,
         fontColor: '#fff',
-        title: 'Text on Path',
-        backgroundColor: 'linear-gradient(178.83deg, rgba(245, 245, 245, 0.4) 2.5%, rgba(245, 245, 245, 0) 94.12%);',
-        description: 'User experience exploration and concept example for the photo editing app Enlight'
+        title: 'GCN',
+        customHeight: '543px',
+        customImgHeight: '700px',
+        customPosition: {top: '50px', left: '50%'},
+        customMobilePosition: {top: '375px', left: '0'},
+        backgroundColor: 'linear-gradient(180.73deg, rgba(0, 0, 0, 0.4) 1.59%, rgba(0, 0, 0, 0) 104.48%), #1E1E1E;',
+        description: 'A mobile web application for a startup that scans the internet and finds the cheapest prices'
     },
     sections: [
         {
@@ -93,8 +100,8 @@ const GcnConfig = {
             </StyledContentOutline>,
             image: <>
                 <StyledImageContainer customMargin={'50px 0 0 0'}
-                    customBackground={'linear-gradient(180deg, rgba(255, 255, 255, 0.7) -1%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #ECECEC, #ECECEC);'}
-                    customPadding={'0'}>
+                                      customBackground={'linear-gradient(180deg, rgba(255, 255, 255, 0.7) -1%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #ECECEC, #ECECEC);'}
+                                      customPadding={'0'}>
                     <StyledResponsiveImage src={DesktopMock} customMaxWidth={'1040px'}/>
                 </StyledImageContainer>
                 <StyledImageContainer customPadding={'155px 0 0 0'} customMargin={'0'}

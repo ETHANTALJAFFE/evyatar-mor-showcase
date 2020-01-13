@@ -10,15 +10,13 @@ const StyledShowCaseHeaderTitle = styled.div`
 
 const StyledShowcase = styled.div`
   width: 100%;
-  height: 440px !important;
+  height: ${props => props.customHeight || '400px'};
   color: ${props => props.fontColor};
 `;
 
 const StyledShowcaseBackground = styled.div`
   height: 100%;
   display: flex;
-  
-  border-radius: 10px;
   background: ${props => props.backgroundColor};
 `;
 
@@ -32,15 +30,21 @@ const StyledShowCaseHeaderContainer = styled.div`
 `;
 
 const StyledShowcaseImg = styled.div`
-  width: 840px;
-  height: 500px;
-  top: -90px;
-  left: 36%;
-  position: absolute;
+  width: 100%;
   z-index: 1000;
-  clip-path: inset(18% 0% 0% 0%);
+  height: ${props => props.customHeight || '700px'};
+  position: absolute;
+  top: ${props => props.customTop};
+  left: ${props => props.customLeft};
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: ${props => 'url(' + props.src + ')'};
+  
+  @media only screen and (max-width: 768px) {
+  top: ${props => props.customMobileTop};
+  left: ${props => props.customMobileLeft};
+  max-width: 768px;
+  }
 `;
 const StyledShowcaseIcon = styled.div`
   background-repeat: no-repeat;

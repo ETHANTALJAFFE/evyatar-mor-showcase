@@ -2,20 +2,23 @@ import React from 'react';
 import {
     StyledShowCaseHeaderTitle,
     StyledShowCaseHeaderContainer,
-    StyledShowcase,StyledShowcaseImg,
+    StyledShowcase, StyledShowcaseImg,
     StyledShowcaseBackground,
     StyledShowcaseIcon
 } from "./style";
 
-const ShowCaseHeader = ({title, fontColor, backgroundColor, description, imgSrc, iconSrc}) => {
-    return <StyledShowcase fontColor={fontColor}>
+const ShowCaseHeader = ({title, customHeight, customImgHeight,
+                            fontColor, backgroundColor, customPosition, customMobilePosition, description, imgSrc}) => {
+    return <StyledShowcase fontColor={fontColor} customHeight={customHeight}>
         <StyledShowcaseBackground backgroundColor={backgroundColor}>
             <StyledShowCaseHeaderContainer>
-                <StyledShowcaseIcon src={iconSrc} />
                 <StyledShowCaseHeaderTitle>{title}</StyledShowCaseHeaderTitle>
                 <div>{description}</div>
             </StyledShowCaseHeaderContainer>
-            <StyledShowcaseImg src={imgSrc}/>
+            <StyledShowcaseImg customTop={customPosition.top} customLeft={customPosition.left}
+                               customHeight={customImgHeight}
+                               customMobileTop={customMobilePosition.top} customMobileLeft={customMobilePosition.left}
+                               src={imgSrc}/>
         </StyledShowcaseBackground>
     </StyledShowcase>;
 };
