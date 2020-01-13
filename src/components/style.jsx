@@ -45,7 +45,7 @@ const StyledResponsiveImage = styled.img`
   max-width: ${props => props.customMaxWidth || 'default'};
 `;
 const StyledShowcasesContainer = styled.div`
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 850px) {
       margin-top: ${props => props.customMarginTopForMobile};
       &:before {
         top: ${props => props.customTopSkewPositionForMobile};

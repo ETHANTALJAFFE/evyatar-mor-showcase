@@ -19,7 +19,7 @@ const OtherShowcases = () => {
     return <StyledOtherShowcases>
         <div>Thanks for watching! ❤</div>
         <StyledThumbnails>{_.values(_.mapValues(filteredShowcases, (thumbnail, path) => {
-            return <StyledThumbnailContainer><Link to={path} target={'_blank'}><img
+            return <StyledThumbnailContainer><Link width={'100%'} to={path} target={'_blank'}><img width={'100%'}
                 src={thumbnail}/></Link></StyledThumbnailContainer>
         }))}</StyledThumbnails>
     </StyledOtherShowcases>

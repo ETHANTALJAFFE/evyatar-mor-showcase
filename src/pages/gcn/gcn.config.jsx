@@ -31,8 +31,9 @@ const GcnConfig = {
         title: 'GCN',
         customHeight: '543px',
         customImgHeight: '700px',
+        customMobileImgHeight: '400px',
         customPosition: {top: '50px', left: '50%'},
-        customMobilePosition: {top: '375px', left: '0'},
+        customMobilePosition: {top: '425px', left: '0'},
         backgroundColor: 'linear-gradient(180.73deg, rgba(0, 0, 0, 0.4) 1.59%, rgba(0, 0, 0, 0) 104.48%), #1E1E1E;',
         description: 'A mobile web application for a startup that scans the internet and finds the cheapest prices'
     },

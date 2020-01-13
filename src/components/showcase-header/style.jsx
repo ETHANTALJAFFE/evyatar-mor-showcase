@@ -21,6 +21,9 @@ const StyledShowcaseBackground = styled.div`
 `;
 
 const StyledShowCaseHeaderContainer = styled.div`
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+  }
   width: 38%;
   padding: 5% 7%;
   font-size: 21px;
@@ -40,10 +43,11 @@ const StyledShowcaseImg = styled.div`
   background-repeat: no-repeat;
   background-image: ${props => 'url(' + props.src + ')'};
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 850px) {
   top: ${props => props.customMobileTop};
   left: ${props => props.customMobileLeft};
   max-width: 768px;
+  height: ${props => props.customMobileImgHeight || '700px'};
   }
 `;
 const StyledShowcaseIcon = styled.div`

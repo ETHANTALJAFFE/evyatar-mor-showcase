@@ -15,7 +15,7 @@ const GcnShowcase = () => {
     return (
         <StyledSectionContainer>
             <Topbar customBackgroundColor={'#1e1e1e'} customColor={'#fff'}/>
-            <ShowCaseHeader customImgHeight={headerConfig.customImgHeight} customHeight={headerConfig.customHeight} customPosition={headerConfig.customPosition}
+            <ShowCaseHeader customMobileImgHeight={headerConfig.customMobileImgHeight} customImgHeight={headerConfig.customImgHeight} customHeight={headerConfig.customHeight} customPosition={headerConfig.customPosition}
                             customMobilePosition={headerConfig.customMobilePosition} imgSrc={headerConfig.imgSrc}
                             fontColor={headerConfig.fontColor} title={headerConfig.title}
                             backgroundColor={headerConfig.backgroundColor}
