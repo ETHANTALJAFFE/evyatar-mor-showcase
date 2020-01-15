@@ -20,7 +20,7 @@ const GcnShowcase = () => {
                             fontColor={headerConfig.fontColor} title={headerConfig.title}
                             backgroundColor={headerConfig.backgroundColor}
                             description={headerConfig.description}/>
-            <StyledShowcasesContainer customMarginTopForMobile={'150px'} customTopSkewPositionForMobile={'550px !important'}>
+            <StyledShowcasesContainer customMarginTop={'100px'} customMarginTopForMobile={'150px'} customTopSkewPositionForMobile={'550px !important'}>
                 {sections.map((section, index) => <ShowcaseSection key={index} {...section} />)}
             </StyledShowcasesContainer>
             <OtherShowcases/>

@@ -1,6 +1,6 @@
 import React, {useMemo} from 'react';
 // import ShowCaseHeader from "../../components/showcase-header/showcase-header";
-import {StyledSectionContainer, StyledSectionContentContainer} from "../text-to-path-showcase/style";
+import {StyledSectionContainer, StyledSectionContentContainer} from "../text-on-path-showcase/style";
 import ShowcaseSection from "../../components/showcase-section/showcase-section";
 import {CompareShowcaseConfig} from "./compare-showcase.config";
 import Topbar from "../../topbar/topbar";

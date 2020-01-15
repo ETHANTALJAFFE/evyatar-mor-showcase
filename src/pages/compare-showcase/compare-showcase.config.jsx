@@ -6,7 +6,7 @@ import * as ItemPage from "../../resources/Compare/Item-page.png";
 import * as DesignLang from "../../resources/Compare/Design-lang.png";
 
 import React from "react";
-import {StyledSectionContentContainer} from "../text-to-path-showcase/style";
+import {StyledSectionContentContainer} from "../text-on-path-showcase/style";
 import {
     StyledContentOutline,
     StyledContentOutlineTitle,

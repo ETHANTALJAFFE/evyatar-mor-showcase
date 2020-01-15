@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import CompareShowcase from "./pages/compare-showcase/compare-showcase";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import TextToPathShowcase from "./pages/text-to-path-showcase/text-to-path-showcase";
+import TextOnPathShowcase from "./pages/text-on-path-showcase/text-on-path-showcase";
 import GcnShowcase from "./pages/gcn/gcn";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
                 <div className="showcases-container">
                     <Switch>
                         <Route path="/text-on-path-showcase">
-                            <TextToPathShowcase/>
+                            <TextOnPathShowcase/>
                         </Route>
                         <Route path="/compare-showcase">
                             <CompareShowcase/>
@@ -21,7 +21,7 @@ function App() {
                             <GcnShowcase />
                         </Route>
                         <Route path="/">
-                            <TextToPathShowcase/>
+                            <TextOnPathShowcase/>
                         </Route>
                     </Switch>
                 </div>

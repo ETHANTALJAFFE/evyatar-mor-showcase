@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyledSectionTitle, StyledShowCaseSection, StyledSectionSubTitle} from "./style";
-import {StyledSectionContentContainer} from "../../pages/text-to-path-showcase/style";
+import {StyledSectionContentContainer} from "../../pages/text-on-path-showcase/style";
 
 const ShowcaseSection = ({title, subtitle, content, image}) => {
     return (

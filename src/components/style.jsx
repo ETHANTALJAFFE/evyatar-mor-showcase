@@ -52,17 +52,19 @@ const StyledShowcasesContainer = styled.div`
         height: 150px !important;
       }
     }
+    
+    margin-top: ${props => props.customMarginTop};
     &:before {
     display: block;
     left: 0;
     right: 0;
-    position: absolute;
-    content: '';
-    backface-visibility: hidden;
-    height: 250px;
     top: 400px;
+    content: '';
+    position: absolute;
+    height: 300px;
     background: #f6f7f9;
     transform: skewY(-5deg);
+    backface-visibility: hidden;
     }
 `;
 export {StyledShowcasesContainer, StyledContentOutline, StyledResponsiveImage, StyledImageContainer, StyledContentOutlineTitle, StyledTextBlock};

@@ -29,7 +29,6 @@ const StyledShowCaseHeaderContainer = styled.div`
   font-size: 21px;
   text-align: left;
   line-height: 28px; 
-  font-weight: lighter;    
 `;
 
 const StyledShowcaseImg = styled.div`

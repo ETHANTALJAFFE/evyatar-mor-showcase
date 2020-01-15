@@ -1,11 +1,11 @@
 import React from "react";
 import {StyledImageContainer, StyledTextBlock} from "../../components/style";
-import * as TextToPathIcon from '../../resources/text-to-path-icon.png';
-import * as TextToPath from "../../resources/text-to-path-mockup.png";
+import TextOnPath from "../../resources/text-on-path-mock.png";
 import {StyledFigmaIframe} from "../../components/showcase-section/style";
 import * as TextToPathExample from "../../resources/Text-to-path-example.gif";
 import * as TextToPathMockupGif from "../../resources/Lightricks-text-to-path-mockup-new.gif";
 import ShowcaseSectionTable from "../../components/showcase-section-table/showcase-section-table";
+import * as TextOnPathTitle from '../../resources/Text-On-Path-Header.png'
 
 const BackgroundSectionSubtitle = <div>
     <StyledTextBlock>Text on Path is a popular and useful functionality in photo editing software. It lets you control
@@ -20,12 +20,16 @@ const BackgroundSectionSubtitle = <div>
 
 const TextOnPathConfig = {
     header: {
-        iconSrc: TextToPathIcon,
-        imgSrc: TextToPath,
-        fontColor: '#fff',
-        title: 'Text on Path',
-        backgroundColor: 'linear-gradient(178.83deg, rgba(245, 245, 245, 0.4) 2.5%, rgba(245, 245, 245, 0) 94.12%);',
-        description: 'User experience exploration and concept example for the photo editing app Enlight'
+        imgSrc: TextOnPath,
+        fontColor: '#000',
+        title: <img src={TextOnPathTitle} />,
+        customHeight: '543px',
+        customImgHeight: '615px',
+        customMobileImgHeight: '400px',
+        customPosition: {top: '50px', left: '60%'},
+        customMobilePosition: {top: '375px', left: '20%'},
+        backgroundColor: '#fff',
+        description: 'UX research and prototyping for a common design feature that disappear from mobile phone design apps'
     },
     sections: [
         {
