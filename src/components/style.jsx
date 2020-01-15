@@ -28,7 +28,7 @@ const StyledContentOutlineTitle = styled.div`
 `;
 
 const StyledTextBlock = styled.div`
-padding: 0 0 30px 0;
+  padding: 0 0 30px 0;
 `;
 
 const StyledImageContainer = styled.div`
@@ -52,7 +52,7 @@ const StyledShowcasesContainer = styled.div`
         height: 150px !important;
       }
     }
-    
+    width: 100%;
     margin-top: ${props => props.customMarginTop};
     &:before {
     display: block;
