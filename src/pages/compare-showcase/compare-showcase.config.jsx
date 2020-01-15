@@ -13,13 +13,24 @@ import {
     StyledImageContainer, StyledResponsiveImage,
     StyledTextBlock
 } from "../../components/style";
-import * as TextToPathMockupGif from "../../resources/Lightricks-text-to-path-mockup-new.gif";
 import ShowcaseSectionTable from "../../components/showcase-section-table/showcase-section-table";
+import CompareHeaderImg from "../../resources/Compare/Mockups.png";
 
 const analysisAndFlowSubtitle = 'In order to understand the product, its users and the right solution, you must first understand the app’s objective(s).';
 
 const CompareShowcaseConfig = {
-    header: {},
+    header: {
+        imgSrc: CompareHeaderImg,
+        fontColor: '#fff',
+        title: 'Compare',
+        customHeight: '543px',
+        customImgHeight: '580px',
+        customMobileImgHeight: '400px',
+        customPosition: {top: '150px', left: '60%'},
+        customMobilePosition: {top: '425px', left: '0'},
+        backgroundColor: 'linear-gradient(178.72deg, rgba(92, 66, 255, 0.4) 2.72%, rgba(245, 245, 245, 0) 102.31%), #3D8AFF;',
+        description: 'A mobile web application for a startup that scans the internet and finds the cheapest prices'
+    },
     sections: [{
         title: 'Analysis & Flow',
         subtitle: analysisAndFlowSubtitle,
